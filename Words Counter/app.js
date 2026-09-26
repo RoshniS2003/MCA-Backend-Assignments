@@ -6,9 +6,7 @@ import fs from "fs";
 const filename = process.argv[2];
 
 const data = fs.readFileSync(filename, "utf-8");
-
 const words = data.toLowerCase().split(/\s+/);
-
 const frequency = {};
 
 for (const word of words) {
